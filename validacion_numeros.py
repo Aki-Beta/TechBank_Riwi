@@ -1,10 +1,11 @@
 #Mi funcion
 
-def pedirNumero ():
-    try:
-        numero = float(input())
-        return numero
-    except ValueError:
-        print("Por favor, ingrese un número válido.")
-        numero = 0
-        return numero
+def pedirNumero():
+    seguir = True
+    while seguir:
+        try:
+            numero = float(input()) 
+            seguir = False
+            return numero
+        except ValueError:
+            print("Por favor, ingrese un número válido.")  
