@@ -22,7 +22,7 @@ Lógica: Si monto_a_retirar > saldo_actual, la operación debe ser rechazada.
 Contexto: Recuerda que el sistema inicia con un saldo fijo de $1000.
 '''
 
-def permiso(valor_deposito, valor_retiro, valor_cuenta):                          
+def permiso(valor_deposito=0, valor_retiro=0, valor_cuenta=0):                          
     conf = False
 
     if(valor_retiro<=0 or valor_deposito<=0):                                     #El valor a retirar debe ser positivo
