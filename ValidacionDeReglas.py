@@ -22,16 +22,16 @@ Lógica: Si monto_a_retirar > saldo_actual, la operación debe ser rechazada.
 Contexto: Recuerda que el sistema inicia con un saldo fijo de $1000.
 '''
 
-def permiso(valor_retiro, valor_cuenta):                  #Aquí se deben modificar los parametros
+def permiso(valor_deposito, valor_retiro, valor_cuenta):                          
     conf = False
 
-    if(valor_retiro<=0):
+    if(valor_retiro<=0 or valor_deposito<=0):                                     #El valor a retirar debe ser positivo
         print("Por favor, digite un cantidad mayor de 0")
 
-    elif(valor_cuenta<valor_retiro):
+    elif(valor_cuenta<valor_retiro):                                              #Regla de fondos insuficientes
         print("Fondos insuficientes")
         
-    elif(valor_cuenta-valor_retiro<5):
+    elif(valor_cuenta-valor_retiro<5):                                            #Regla de monto minimo en la cuenta
         print("Fondos insuficientes. Por favor, digite una cantidad mayor de retiro")
 
     else: conf = True
