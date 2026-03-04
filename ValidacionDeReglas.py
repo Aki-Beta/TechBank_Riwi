@@ -32,7 +32,7 @@ def permiso(valor_deposito=0, valor_retiro=0, valor_cuenta=0):
         print("Fondos insuficientes")
         
     elif(valor_cuenta-valor_retiro<5):                                            #Regla de monto minimo en la cuenta
-        print("Fondos insuficientes. Por favor, digite una cantidad mayor de retiro")
+        print("Solicitud no valida, saldo minimo alcanzado")
 
     else: conf = True
 
