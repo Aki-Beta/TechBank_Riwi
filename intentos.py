@@ -1,13 +1,26 @@
-intentos = 3 
-while intentos> 0:
-    usuario = input("introduce el usuario ")
-    password = input("introduce la contraseña ")
-
-    if usuario == "tyler" and password == "tyler123":
-        print("has entrado al sistema")
-        break
-    else:
-        intentos -=1
-        print (f"incorrecto. te queda {intentos} intentos. \n")
-    if intentos == 0:
-        print ("cuenta bloqueada")
+def validacion():
+     intentos = []
+     intentoscontra = []
+     intentosfallidos = 0
+     usuarioreal = "user"
+     passwordreal = "1234"
+ 
+     while len(intentos) <= 2:
+     
+          usuario = input("introduce el usuario ")
+          password = input("introduce la contraseña ")
+     
+          if usuario != usuarioreal:
+               intentos.append(usuario)
+               intentosfallidos = +1
+          
+          if password != passwordreal:
+               intentoscontra.append(usuario)
+               print (" contraseña incorrecta")
+          elif usuario == usuarioreal:
+               intentos.append(usuario)
+               if password == passwordreal:
+                    print("Correcto")
+               
+          if intentosfallidos == 3:
+               print(" usuario bloqueado")  
