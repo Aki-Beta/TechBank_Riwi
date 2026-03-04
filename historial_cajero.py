@@ -1,4 +1,4 @@
-def historial_cajero(opcion):
+def historial_cajero():
     print("---historial de cajero---")
     print("1. depositos")
     print("2. retiros")
