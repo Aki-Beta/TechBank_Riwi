@@ -1,6 +1,11 @@
-def limite_retiro (saldo):
-  if saldo < 20000:
-   print("El monto de retiro es válido")
-  else: 
-    print ("El monto de retiro es inválido para el retiro")
-    exit()
+limite_diario = 20000
+
+def limite_retiro (monto_retiro, tope_diario):
+    if total_retirado + monto_retiro <= tope_diario:
+        print("El monto excede el límite diario permitido para retiros")
+        return False
+    else: 
+        print ("Retiro permitido")
+        return True
+    
+
