@@ -1,5 +1,3 @@
-from pprint import pprint
-
 
 limite_diario = 20000
 
