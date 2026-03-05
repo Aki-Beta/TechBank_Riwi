@@ -1,6 +1,6 @@
-def realizar_retiro(retiro,historial):
-    historial.append(f"Saldo: {retiro}")
+def realizar_retiro(retiro,historial,saldo):
     saldo -= retiro
-    print(f"Retiro exitoso. Nuevo saldo: ${saldo}")
+    historial.append(f'Saldo: {saldo}')
+    print('')
+    print(f'Retiro exitoso. Nuevo saldo: ${saldo}')
     return saldo
-    
