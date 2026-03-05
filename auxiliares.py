@@ -9,3 +9,10 @@ def limite_retiro (monto_retiro, tope_diario):
         return True
     
 
+
+def operaciones_exitosas(contador_operaciones, historial):
+    contador_operaciones += 1
+    historial.append("Operación exitosa")
+    return contador_operaciones
+
+
