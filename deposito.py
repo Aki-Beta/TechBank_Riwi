@@ -12,3 +12,7 @@ def deposito(saldo, historial):
         except ValueError:
             print("Entrada no válida. Por favor, ingrese un número.")
 
+saldo = 1000
+historial = []
+
+saldo, historial = deposito(saldo, historial)
