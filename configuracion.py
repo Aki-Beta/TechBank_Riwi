@@ -1,10 +1,4 @@
-from validacion import inicio
-from mostrarmenu import mostrarmenu
-from operaciones import consultar_saldo
-from operaciones import depositar
-from operaciones import retirar
-from operaciones import mostrar_historial
-from validacion_numerica import pedirNumero
+
 print("BIENVENIDO") 
 
 
