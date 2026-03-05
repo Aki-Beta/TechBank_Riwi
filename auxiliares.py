@@ -17,7 +17,6 @@ def operaciones_exitosas(contador_operaciones, historial):
     return contador_operaciones
 
 def mostrar_historial(saldo, contador_operaciones, historial):
-    print ("Historial de operaciones:")
     print(f"Operaciones exitosas: {contador_operaciones}")
     print("Historial de operaciones:")
     print (f"Saldo final: {saldo}")
