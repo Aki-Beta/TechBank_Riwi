@@ -13,14 +13,11 @@ from menunuevo import menu_menuprincipal
 historial = []
 
 saldo = configuracion_inicial()
-ingreso = autenticacion()
 
-if ingreso == False:
-    pass
-elif ingreso == True:
 
-  continuar = True
-  
+continuar = validacion()
+
+
 while continuar:
 
     opcion = menu_menuprincipal()
