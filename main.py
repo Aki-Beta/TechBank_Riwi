@@ -1,6 +1,6 @@
 from auxiliares import *
 from cajero_retiro import *
-from logica_de_deposito import *
+from deposito import *
 from historial_cajero import *
 from configuracion import * 
 from gestion_de_Saldo import *
