@@ -7,7 +7,7 @@ from gestion_de_Saldo import *
 from intentos import *
 from validacion_numeros import pedirNumero
 from ValidacionDeReglas import permiso
-from menunuevo import menu_principal
+from menunuevo import menu_menuprincipal
 
 historial = []
 
@@ -16,7 +16,7 @@ saldo = configuracion_inicial()
 continuar = True
 while continuar:
 
-    opcion = menu_principal()
+    opcion = menu_menuprincipal()
 
     if opcion == 1:
         print("Consultando saldo...")

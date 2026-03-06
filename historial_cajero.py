@@ -3,5 +3,5 @@ def mostrar_historial(historial):
     if len(historial) == 0:
         print("historial vacio")
     else:
-        for movimientos in range(historial):
-        print(movimientos)
+        for movimientos in historial:
+            print(movimientos)
