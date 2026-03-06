@@ -2,6 +2,7 @@ from auxiliares import *
 from cajero_retiro import *
 from deposito import *
 from historial_cajero import *
+from autenticacion import *
 from configuracion import * 
 from gestion_de_Saldo import *
 from intentos import *
@@ -12,8 +13,14 @@ from menunuevo import menu_menuprincipal
 historial = []
 
 saldo = configuracion_inicial()
+ingreso = autenticacion()
 
-continuar = True
+if ingreso == False:
+    pass
+elif ingreso == True:
+
+  continuar = True
+  
 while continuar:
 
     opcion = menu_menuprincipal()
